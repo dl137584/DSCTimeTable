@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:paddingTop="200px"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/dsclogo3"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80px" />
+    <!--android:background="#83c8bd"-->
+    <TextView android:id="@+id/configtext"
+        android:layout_width="900px"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:textSize="20dp"
+        android:text="원하는 시간표에 해당하는\n학과부터 차례대로 선택해주십시오."/>
+
+    <LinearLayout
+        android:layout_width="1100px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="150px"
+        android:paddingRight="150px"
+        android:paddingTop="100px">
+
+        <TextView android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="학과"/>
+        <Spinner android:id="@+id/spdept"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:prompt="@string/selectdept"
+            android:paddingLeft="200px"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20px"/>
+
+        <TextView android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="학년"/>
+        <Spinner android:id="@+id/spyear"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:prompt="@string/selectyear"
+            android:paddingLeft="200px"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20px"/>
+
+        <TextView android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="반"/>
+        <Spinner android:id="@+id/spgroup"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:prompt="@string/selectgroup"
+            android:paddingLeft="200px"/>
+
+        <Button android:id="@+id/config_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="확인"/>
+    </LinearLayout>
+
+</LinearLayout>

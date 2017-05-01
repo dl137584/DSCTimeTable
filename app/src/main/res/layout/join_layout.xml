@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!-- imageview부터 hello textview 까지 1100px-1200px -->
+    <ImageView android:id="@+id/logo"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="200px"
+        android:paddingBottom="100px"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/timetable_1"/>
+
+    <TextView android:id="@+id/hello_join"
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:gravity="bottom"
+        android:paddingLeft="300px"
+        android:textSize="30dp"
+        android:text=""/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:paddingLeft="300px"
+        android:textSize="30dp"
+        android:text="어서오세요!"/>
+
+    <TextView android:id="@+id/join_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="'DSC 시간표'에서 사용할 이름을 입력해 주십시오."/>
+    <EditText android:id="@+id/nick"
+        android:layout_gravity="center"
+        style="@style/JEdit"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <Button android:id="@+id/dupl_button"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text="중복확인"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <Button android:id="@+id/join_button"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nick"
+            android:text="OK"/>
+
+    </LinearLayout>
+</LinearLayout>

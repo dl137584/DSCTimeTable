@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView android:id="@+id/annotext"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:gravity="center"
+        android:background="@color/subject"
+        android:textSize="25dp"
+        android:textColor="#EEEEFF"
+        android:text="공지"/>
+    <TextView android:id="@+id/grouptext"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:paddingLeft="80px"
+        android:paddingTop="25px"
+        android:textSize="17dp"/>
+
+    <ScrollView android:id="@+id/scrollanno"
+        android:layout_width="1200px"
+        android:layout_height="1300px"
+        android:paddingLeft="100px"
+        android:paddingTop="10px"
+        android:paddingRight="40px"
+        android:paddingBottom="20px"
+        android:layout_gravity="center">
+        <LinearLayout android:id="@+id/linearanno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/output"
+                android:layout_width="1000px"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:textSize="11dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout android:id="@+id/linear_bottom_anno"
+        android:layout_width="1200px"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:paddingLeft="30px">
+
+        <EditText android:id="@+id/inputanno"
+            android:layout_width="850px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+        <Button android:id="@+id/anno_send_button"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:text="OK"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="graduation.dsctimetable">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar">-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/timetable_1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">>
+
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TimetableActivity"/>
+        <activity android:name=".JsontestActivity"/>
+        <activity android:name=".JoinActivity"/>
+        <activity android:name=".DBTest"/>
+        <activity android:name=".TableConfigActivity"/>
+        <activity android:name=".MemoActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <receiver android:name=".AlarmBroadcast"></receiver>
+        <activity android:name=".AnnoActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".SettingActivity"/>
+        <receiver android:name=".WidgetProvider"
+            android:label="DSC 시간표 위젯 (일반)">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <!--<action android:name="graduation.dsctimetable.WidgetProvider.CLICK"/>-->
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider"/>
+        </receiver>
+    </application>
+
+</manifest>

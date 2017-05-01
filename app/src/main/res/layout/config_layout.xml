@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+        <!--android:layout_width="700px"-->
+        <!--android:layout_height="300px"-->
+        <!--android:paddingTop="200px"-->
+        <!--android:background="@drawable/dsclogo3"/>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80px" />-->
+    <!--&lt;!&ndash;android:background="#83c8bd"&ndash;&gt;-->
+    <!--<TextView android:id="@+id/configtext"-->
+        <!--android:layout_width="900px"-->
+        <!--android:layout_height="400px"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="원하는 시간표에 해당하는\n학과부터 차례대로\n선택해주십시오."/>-->
+
+
+</LinearLayout>
