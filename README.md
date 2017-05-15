@@ -11,13 +11,30 @@ connected the temporary intranet and this application by JSON parsing.
  - Resultly, it could get private user's ID,PW and timetable information from intranet.
 
 # System Workflow
-<img src="./systemworkflow_web.png" width="60%">
-<img src="./systemworkflow_app.png" width="60%">
-
+Web<br/>
+<img src="./systemworkflow_web.png" width="600"/><br/>
+App<br/>
+<img src="./systemworkflow_app.png" width="600"/>
+<br/><br/>
 # System Requirements Specification: login
-- Context Diagram
-<img src="./level0.png" width="60%">
-- Level1 Data Flow Diagram
-<img src="./level1.png" width="80%">
-- Level2 Data Flow Diagram
-<img src="./level2.png" width="90%">
+Context Diagram<br/>
+<img src="./level0.png" width="500"/><br/><br/>
+Level1 Data Flow Diagram<br/>
+<img src="./level1.png" width="600"/><br/><br/>
+Level2 Data Flow Diagram<br/>
+<img src="./level2.png" width="400"/>
+<br/><br/>
+# Example
+Main<br/>
+<img src="./example1.jpg" width="300"><br/><br/>
+First Visitor<br/>
+<img src="./example2.jpg" width="270"><br/><br/>
+Timetable(Basic)<br/>
+<img src="./example3.jpg" width="300"><br/><br/>
+Select timetable<br/>
+<img src="./example4.jpg" width="300"><br/><br/>
+Memo<br/>
+<img src="./example5.jpg" width="300"><br/><br/>
+Alarm execution<br/>
+<img src="./example6.jpg" width="300">
+<br/>
